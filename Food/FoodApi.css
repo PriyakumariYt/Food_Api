@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(
+    to right top,
+    #161516,
+    #151316,
+    #141216,
+    #111017,
+    #0e0f17,
+    #0d121a,
+    #0c141d,
+    #091720,
+    #081d26,
+    #06232a,
+    #062a2d,
+    #0a302e
+  );
+
+  padding: 0 1rem;
+}
+
+#container {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 2rem 0;
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 2rem;
+  width: 90%;
+  margin: auto;
+}
+.Food {
+  background: #53b6a0;
+  padding: 0 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  transition: 1s;
+}
+.Food:hover {
+  transform: scale(1.1);
+  -webkit-box-shadow: -2px 3px 34px 15px rgba(0, 0, 0, 0.69);
+  -moz-box-shadow: -2px 3px 34px 15px rgba(65, 39, 39, 0.69);
+  box-shadow: -2px 3px 34px 15px rgba(0, 0, 0, 0.69);
+}
+
+.Food > img {
+  height: 300px;
+  width: 100%;
+}
+.Food h2 {
+  color: rgb(255, 245, 245);
+  font-size: 20px;
+  font-weight: 400;
+  margin: 5px auto;
+  text-align: center;
+}
+.Food h3 {
+  text-align: center;
+  margin-top: 0;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+}
+#search {
+  font-size: 25px;
+  padding: 10px 20px 10px 20px;
+  border: 0.5px solid rgb(14, 11, 11);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 35px auto;
+  outline: none;
+}
+@media (max-width: 768px) {
+  #container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .Food {
+    padding: 0;
+  }
+
+  .Food h2 {
+    font-size: 15px;
+  }
+}
